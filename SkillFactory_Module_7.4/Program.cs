@@ -9,7 +9,7 @@ using SFML.Learning;
         InitWindow(800, 600);
 
         Console.ReadLine();
-
+        
         }
     }
 
