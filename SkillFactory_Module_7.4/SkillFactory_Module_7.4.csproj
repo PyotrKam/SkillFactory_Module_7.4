@@ -33,6 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="sfml-audio">
+      <HintPath>SFML.Net-2.4-learning\lib\sfml-audio.dll</HintPath>
+    </Reference>
+    <Reference Include="sfml-graphics">
+      <HintPath>SFML.Net-2.4-learning\lib\sfml-graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="sfml-learning">
+      <HintPath>SFML.Net-2.4-learning\lib\sfml-learning.dll</HintPath>
+    </Reference>
+    <Reference Include="sfml-system">
+      <HintPath>SFML.Net-2.4-learning\lib\sfml-system.dll</HintPath>
+    </Reference>
+    <Reference Include="sfml-window">
+      <HintPath>SFML.Net-2.4-learning\lib\sfml-window.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
