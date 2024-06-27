@@ -8,9 +8,13 @@ using SFML.Graphics;
         {
 
         InitWindow(800, 600, "Meow");
+        int x = 200;
+        int y = 150;
+        int speed = 8;
+        int dir = 1;
 
-        while (true)
-        {
+            while (true)
+            {
             //1. Расчёт
             DispatchEvents();
 
@@ -18,27 +22,24 @@ using SFML.Graphics;
 
 
             //2.Очистка буфера и окно
-            ClearWindow(Color.Green);
+            ClearWindow();
 
             //3.Отрисовка буфера на окне
-            SetFillColor(Color.Cyan);
+            if (x > 550) dir *= -1;
+            if (x < 100) dir *= -1;
 
-            DrawLine(0, 0, 100, 100);
+            x += dir * speed;
+            
+            
 
-            FillCircle(200, 200, 100);
-
-            SetFillColor(0, 50, 100);
-
-            FillRectangle(200, 400, 200, 40);
-            //Вывод методов отрсовки объектов
+            FillCircle(x, y, 100);
+            
             DisplayWindow();
 
             // 4. Ожидание
             Delay(1);
-        }
+            }
 
-
-        Console.ReadLine();
         
         }
     }
