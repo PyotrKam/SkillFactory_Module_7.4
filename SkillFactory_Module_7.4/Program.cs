@@ -8,10 +8,7 @@ using SFML.Graphics;
         {
 
         InitWindow(800, 600, "Meow");
-        int x = 200;
-        int y = 150;
-        int speed = 8;
-        int dir = 1;
+           
 
             while (true)
             {
@@ -25,14 +22,12 @@ using SFML.Graphics;
             ClearWindow();
 
             //3.Отрисовка буфера на окне
-            if (x > 550) dir *= -1;
-            if (x < 100) dir *= -1;
 
-            x += dir * speed;
-            
-            
+            if (GetKey(SFML.Window.Keyboard.Key.F) == true)
+            {
+                Console.WriteLine("Mewo");
+            }
 
-            FillCircle(x, y, 100);
             
             DisplayWindow();
 
