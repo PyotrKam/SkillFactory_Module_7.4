@@ -1,12 +1,13 @@
 ﻿using System;
 using SFML.Learning;
+using SFML.Graphics;
 
     class Program : Game
     {
         static void Main(string[] args)
         {
 
-        InitWindow(800, 600);
+        InitWindow(800, 600, "Meow");
 
         while (true)
         {
@@ -17,10 +18,18 @@ using SFML.Learning;
 
 
             //2.Очистка буфера и окно
-
+            ClearWindow(Color.Green);
 
             //3.Отрисовка буфера на окне
+            SetFillColor(Color.Cyan);
 
+            DrawLine(0, 0, 100, 100);
+
+            FillCircle(200, 200, 100);
+
+            SetFillColor(0, 50, 100);
+
+            FillRectangle(200, 400, 200, 40);
             //Вывод методов отрсовки объектов
             DisplayWindow();
 
